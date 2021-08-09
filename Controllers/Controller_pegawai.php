@@ -66,7 +66,7 @@ class Controller_pegawai
 
 
     // Method untuk memasukan data ke dalam table
-    function PUTData($nisn, $nis, $nama,  $id_kelas, $alamat, $no_telp, $id_spp)
+    function PUTData($nisn, $nis, $nama, $id_kelas, $alamat, $no_telp, $id_spp)
     {
 
         // perintah PUT data
