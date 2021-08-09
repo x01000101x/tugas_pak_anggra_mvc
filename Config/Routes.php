@@ -17,8 +17,10 @@ if ($function == "create") {
     // Validasi Token CSRF
     if (validation() == true) {
         $db->POSTData(
+            $_POST['nisn'],
             $_POST['nis'],
             $_POST['nama'],
+            $_POST['id_kelas'],
             $_POST['alamat'],
             $_POST['no_telp'],
             $_POST['id_spp']
@@ -35,6 +37,7 @@ elseif ($function == "put") {
             $_POST['nisn'],
             $_POST['nis'],
             $_POST['nama'],
+            $_POST['id_kelas'],
             $_POST['alamat'],
             $_POST['no_telp'],
             $_POST['id_spp']

@@ -6,8 +6,12 @@ include('../Config/Csrf.php');
     <input type="text" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
     <table border="1">
         <tr>
+            <td>NISN</td>
+            <td><input type="number" name="nisn"></td>
+        </tr>
+        <tr>
             <td>NIS</td>
-            <td><input type="text" name="nis"></td>
+            <td><input type="number" name="nis"></td>
         </tr>
         <tr>
             <td>Nama</td>
@@ -15,7 +19,7 @@ include('../Config/Csrf.php');
         </tr>
         <tr>
             <td>ID kelas</td>
-            <td><input type="text" name="id_kelas"></td>
+            <td><input type="number" name="id_kelas"></td>
         </tr>
         <tr>
             <td>Alamat</td>
@@ -28,7 +32,7 @@ include('../Config/Csrf.php');
         </tr>
         <tr>
             <td>ID_SPP</td>
-            <td><input type="text" name="id_spp">
+            <td><input type="number" name="id_spp">
             </td>
         </tr>
         <tr>
