@@ -4,7 +4,7 @@
 include('Csrf.php');
 
 
-include '../Controllers/Controller_Pegawai.php';
+include '../Controllers/Controller_pegawai.php';
 // Membuat Object dari Class pegawai
 $db = new Controller_pegawai();
 

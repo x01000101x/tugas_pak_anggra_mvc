@@ -3,9 +3,9 @@
 // Memanggil fungsi dari CSRF
 include('../Config/Csrf.php');
 
-include '../Controllers/Controller_Pegawai.php';
+include '../Controllers/Controller_pegawai.php';
 // Membuat Object dari Class pegawai
-$pegawai = new Controller_Pegawai();
+$pegawai = new Controller_pegawai();
 $GetPegawai = $pegawai->GetData_Where($_GET['nisn']);
 ?>
 
