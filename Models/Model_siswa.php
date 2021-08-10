@@ -1,7 +1,7 @@
 <?php
 
-// Class pegawai (CRUD pegawai)
-class Model_pegawai
+// Class siswa (CRUD siswa)
+class Model_siswa
 {
 
     // Property
@@ -85,12 +85,13 @@ class Model_pegawai
 
         // perintah PUT data
         mysqli_query($this->con, "update siswa set
+            nisn='" . $nisn . "',
             nis='" . $nis . "',
             nama='" . $nama . "',
             id_kelas='" . $id_kelas . "',
             alamat='" . $alamat . "',
             no_telp='" . $no_telp . "',
-            no_telp='" . $id_spp . "'
+            id_spp='" . $id_spp . "'
             where nisn='" . $nisn . "'
             ");
     }

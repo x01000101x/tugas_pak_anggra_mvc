@@ -1,7 +1,7 @@
 <?php
 
-// Class pegawai (CRUD pegawai)
-class Controller_pegawai
+// Class siswa (CRUD siswa)
+class Controller_siswa
 {
 
     // Property
@@ -11,7 +11,7 @@ class Controller_pegawai
     var $data;
     var $result;
 
-    var $MPegawai;
+    var $MSiswa;
 
     var $nisn;
     var $nis;
@@ -26,9 +26,9 @@ class Controller_pegawai
     // Method main variabel
     function __construct()
     {
-        // Membuat Object dari Class Module pegawai
-        include '../Models/Model_pegawai.php';
-        $this->MPegawai = new Model_pegawai();
+        // Membuat Object dari Class Module siswa
+        include '../Models/Model_siswa.php';
+        $this->MSiswa = new Model_siswa();
     }
 
 
@@ -39,7 +39,7 @@ class Controller_pegawai
     {
 
         // perintah POST data
-        $this->MPegawai->POST($nisn, $nis, $nama, $id_kelas, $alamat, $no_telp, $id_spp);
+        $this->MSiswa->POST($nisn, $nis, $nama, $id_kelas, $alamat, $no_telp, $id_spp);
     }
 
 
@@ -50,7 +50,7 @@ class Controller_pegawai
     {
 
         // perintah GET data
-        return $this->MPegawai->GET();
+        return $this->MSiswa->GET();
     }
 
 
@@ -59,7 +59,7 @@ class Controller_pegawai
     {
 
         // perintah GET data
-        return $this->MPegawai->GET_Where($nisn);
+        return $this->MSiswa->GET_Where($nisn);
     }
 
 
@@ -70,7 +70,7 @@ class Controller_pegawai
     {
 
         // perintah PUT data
-        $this->MPegawai->PUT($nisn, $nis, $nama, $id_kelas, $alamat, $no_telp, $id_spp);
+        $this->MSiswa->PUT($nisn, $nis, $nama, $id_kelas, $alamat, $no_telp, $id_spp);
     }
 
 
@@ -81,6 +81,6 @@ class Controller_pegawai
     {
 
         // perintah DELETE data
-        $this->MPegawai->DELETE($nisn);
+        $this->MSiswa->DELETE($nisn);
     }
 }

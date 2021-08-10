@@ -1,19 +1,19 @@
 <?php
 
-include '../Controllers/Controller_pegawai.php';
-// Membuat Object dari Class pegawai
-$pegawai = new Controller_pegawai();
-$GetPegawai = $pegawai->GetData_All();
+include '../Controllers/Controller_siswa.php';
+// Membuat Object dari Class siswa
+$siswa = new Controller_siswa();
+$GetSiswa = $siswa->GetData_All();
 
-// untuk mengecek di object $pegawai ada berapa banyak Property
-//echo var_dump($pegawai);
+// untuk mengecek di object $siswa ada berapa banyak Property
+//echo var_dump($siswa);
 ?>
 
 
 <h1>OOP - Class, Object, Property, Method With <u>MVC</u></h1>
 <h2>CRUD and CSRF</h2>
-<h3>Table Pegawai</h3>
-<h3><a href="View_post_pegawai.php">Add Data</a></h3>
+<h3>Table Siswa</h3>
+<h3><a href="View_post_siswa.php">Add Data</a></h3>
 
 
 <table border="1">
@@ -29,9 +29,9 @@ $GetPegawai = $pegawai->GetData_All();
     </tr>
     <?php
     // Decision validation variabel
-    if (isset($GetPegawai)) {
+    if (isset($GetSiswa)) {
         $no = 1;
-        foreach ($GetPegawai as $Get) {
+        foreach ($GetSiswa as $Get) {
     ?>
             <tr>
                 <td><?php echo $no++; ?></td>
@@ -43,7 +43,7 @@ $GetPegawai = $pegawai->GetData_All();
                 <td><?php echo $Get['no_telp']; ?></td>
                 <td><?php echo $Get['id_spp']; ?></td>
                 <td>
-                    <a href="../Views/View_put_pegawai.php?nisn=<?php echo $Get['nisn'] ?>">view</a>
+                    <a href="../Views/View_put_siswa.php?nisn=<?php echo $Get['nisn'] ?>">view</a>
                     <a href="../Config/Routes.php?function=delete&nisn=<?php echo $Get['nisn'] ?>">Delete</a>
                 </td>
             </tr>

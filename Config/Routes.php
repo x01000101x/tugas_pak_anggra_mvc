@@ -4,9 +4,9 @@
 include('Csrf.php');
 
 
-include '../Controllers/Controller_pegawai.php';
-// Membuat Object dari Class pegawai
-$db = new Controller_pegawai();
+include '../Controllers/Controller_siswa.php';
+// Membuat Object dari Class siswa
+$db = new Controller_siswa();
 
 // Membuat variabel dari Get URL
 $function = $_GET['function'];
@@ -26,7 +26,7 @@ if ($function == "create") {
             $_POST['id_spp']
         );
     }
-    header("location:../Views/View_pegawai.php");
+    header("location:../Views/View_siswa.php");
 }
 // Decision variabel put
 elseif ($function == "put") {
@@ -43,10 +43,10 @@ elseif ($function == "put") {
             $_POST['id_spp']
         );
     }
-    header("location:../Views/View_pegawai.php");
+    header("location:../Views/View_siswa.php");
 }
 // Decision variabel delete
 elseif ($function == "delete") {
     $db->DELETEData($_GET['nisn']);
-    header("location:../Views/View_pegawai.php");
+    header("location:../Views/View_siswa.php");
 }

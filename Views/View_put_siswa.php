@@ -3,16 +3,16 @@
 // Memanggil fungsi dari CSRF
 include('../Config/Csrf.php');
 
-include '../Controllers/Controller_pegawai.php';
-// Membuat Object dari Class pegawai
-$pegawai = new Controller_pegawai();
-$GetPegawai = $pegawai->GetData_Where($_GET['nisn']);
+include '../Controllers/Controller_siswa.php';
+// Membuat Object dari Class siswa
+$siswa = new Controller_siswa();
+$GetSiswa = $siswa->GetData_Where($_GET['nisn']);
 ?>
 
 
 
 <?php
-foreach ($GetPegawai as $Get) {
+foreach ($GetSiswa as $Get) {
 ?>
 
     <form action="../Config/Routes.php?function=put" method="POST">
@@ -20,6 +20,10 @@ foreach ($GetPegawai as $Get) {
         <table border="1">
             <input type="hidden" name="nisn" value="<?php echo $Get['nisn']; ?>">
 
+            <tr>
+                <td>NISN</td>
+                <td><input type="number" name="nisn" value="<?php echo $Get['nisn']; ?>"></td>
+            </tr>
             <tr>
                 <td>NIS</td>
                 <td><input type="number" name="nis" value="<?php echo $Get['nis']; ?>"></td>
