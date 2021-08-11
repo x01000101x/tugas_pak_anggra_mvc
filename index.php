@@ -16,6 +16,7 @@
     </ul>
     <ul><a href="Views/View_petugas.php">Petugas</a></ul>
     <ul><a href="Views/View_spp.php">SPP</a></ul>
+    <ul><a href="Views/View_kelas.php">SPP</a></ul>
 
 </body>
 
