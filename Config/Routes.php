@@ -6,6 +6,7 @@ include('Csrf.php');
 
 include '../Controllers/Controller_siswa.php';
 include '../Controllers/Controller_petugas.php';
+include '../Controllers/Controller_spp.php';
 
 
 
@@ -90,4 +91,38 @@ elseif ($function == "delete_petugas") {
     $db_petugas = new Controller_petugas();
     $db_petugas->DELETEData($_GET['id_petugas']);
     header("location:../Views/View_petugas.php");
+}
+
+//SPP
+// Decision variabel create p
+if ($function == "create_spp") {
+    $db_spp = new Controller_spp();
+    // Validasi Token CSRF
+    if (validation() == true) {
+        $db_spp->POSTData(
+            $_POST['id_spp'],
+            $_POST['tahun'],
+            $_POST['nominal']
+        );
+    }
+    header("location:../Views/View_spp.php");
+}
+// Decision variabel put
+elseif ($function == "put_spp") {
+    $db_spp = new Controller_spp();
+    // Validasi Token CSRF
+    if (validation() == true) {
+        $db_spp->PUTData(
+            $_POST['id_spp'],
+            $_POST['tahun'],
+            $_POST['nominal']
+        );
+    }
+    header("location:../Views/View_spp.php");
+}
+// Decision variabel delete
+elseif ($function == "delete_spp") {
+    $db_spp = new Controller_spp();
+    $db_spp->DELETEData($_GET['id_spp']);
+    header("location:../Views/View_spp.php");
 }

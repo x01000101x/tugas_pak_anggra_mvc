@@ -25,7 +25,7 @@ $GetSpp = $spp->GetData_All();
     </tr>
     <?php
     // Decision validation variabel
-    if (isset($Getspp)) {
+    if (isset($GetSpp)) {
         $no = 1;
         foreach ($GetSpp as $Get) {
     ?>
@@ -33,10 +33,7 @@ $GetSpp = $spp->GetData_All();
                 <td><?php echo $no++; ?></td>
                 <td><?php echo $Get['id_spp']; ?></td>
                 <td><?php echo $Get['tahun']; ?></td>
-                <td><?php echo $Get['nominal']; ?></td>
-                <td><?php echo $Get['nama_spp']; ?></td>
-                <td><?php echo $Get['level']; ?></td>
-
+                <td><?php echo "Rp. " . $Get['nominal']; ?></td>
                 <td>
                     <a href="../Views/View_put_spp.php?id_spp=<?php echo $Get['id_spp'] ?>">view</a>
                     <a href="../Config/Routes.php?function=delete_spp&id_spp=<?php echo $Get['id_spp'] ?>">Delete</a>

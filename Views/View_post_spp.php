@@ -11,11 +11,11 @@ include('../Config/Csrf.php');
         </tr>
         <tr>
             <td>tahun</td>
-            <td><input type="text" name="tahun"></td>
+            <td><input type="number" name="tahun"></td>
         </tr>
         <tr>
             <td>nominal (Rp.)</td>
-            <td><input type="text" name="nominal"></td>
+            <td><input type="number" name="nominal"></td>
         </tr>
         <tr>
             <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>

@@ -35,8 +35,8 @@ class Model_spp
 
         mysqli_query($this->con, "insert into spp values(
             '" . $id_spp . "',
-            '" . $nominal . "',
-            '" . $tahun . "'
+            '" . $tahun . "',
+            '" . $nominal . "'
             )");
     }
 
@@ -78,8 +78,8 @@ class Model_spp
         // perintah PUT data
         mysqli_query($this->con, "update spp set
             id_spp='" . $id_spp . "',
-            tahun='" . $nominal . "',
-            nominal='" . $tahun . "'
+            tahun='" . $tahun . "',
+            nominal='" . $nominal . "'
             ");
     }
 
