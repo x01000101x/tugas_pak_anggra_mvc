@@ -54,7 +54,7 @@ class Controller_petugas
 
 
     // Method untuk mengambil data seleksi dari table
-    function GetData_Where($id_petugas)
+    function GetData_Where($id_petugas, $password)
     {
 
         // perintah GET data
