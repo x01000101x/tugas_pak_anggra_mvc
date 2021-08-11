@@ -36,7 +36,7 @@ $GetPetugas = $petugas->GetData_All();
                 <td><?php echo $no++; ?></td>
                 <td><?php echo $Get['id_petugas']; ?></td>
                 <td><?php echo $Get['username']; ?></td>
-                <td><?php echo $Get['password']; ?></td>
+                <td><?php echo password_hash($Get['password'], PASSWORD_DEFAULT); ?></td>
                 <td><?php echo $Get['nama_petugas']; ?></td>
                 <td><?php echo $Get['level']; ?></td>
 
