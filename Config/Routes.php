@@ -7,7 +7,7 @@ include('Csrf.php');
 include '../Controllers/Controller_siswa.php';
 include '../Controllers/Controller_petugas.php';
 include '../Controllers/Controller_spp.php';
-
+include '../Controllers/Controller_kelas.php';
 
 
 
@@ -125,4 +125,37 @@ elseif ($function == "delete_spp") {
     $db_spp = new Controller_spp();
     $db_spp->DELETEData($_GET['id_spp']);
     header("location:../Views/View_spp.php");
+}
+//Kelas
+// Decision variabel create p
+if ($function == "create_kelas") {
+    $db_kelas = new Controller_kelas();
+    // Validasi Token CSRF
+    if (validation() == true) {
+        $db_kelas->POSTData(
+            $_POST['id_kelas'],
+            $_POST['nama_kelas'],
+            $_POST['kompetensi_keahlian']
+        );
+    }
+    header("location:../Views/View_kelas.php");
+}
+// Decision variabel put
+elseif ($function == "put_kelas") {
+    $db_kelas = new Controller_kelas();
+    // Validasi Token CSRF
+    if (validation() == true) {
+        $db_kelas->PUTData(
+            $_POST['id_kelas'],
+            $_POST['nama_kelas'],
+            $_POST['kompetensi_keahlian']
+        );
+    }
+    header("location:../Views/View_kelas.php");
+}
+// Decision variabel delete
+elseif ($function == "delete_kelas") {
+    $db_kelas = new Controller_kelas();
+    $db_kelas->DELETEData($_GET['id_kelas']);
+    header("location:../Views/View_kelas.php");
 }
