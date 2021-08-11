@@ -50,3 +50,4 @@ $GetPetugas = $petugas->GetData_All();
     }
     ?>
 </table>
+<a href="../index.php">Kembali</a>

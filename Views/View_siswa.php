@@ -52,3 +52,4 @@ $GetSiswa = $siswa->GetData_All();
     }
     ?>
 </table>
+<a href="../index.php">Kembali</a>
