@@ -46,7 +46,7 @@ $GetPembayaran = $pembayaran->GetData_All();
                 <td><?php echo $Get['jumlah_bayar']; ?></td>
                 <td>
                     <a href="../Views/View_put_pembayaran.php?id_pembayaran=<?php echo $Get['id_pembayaran'] ?>">view</a>
-                    <a href="../Config/Routes.php?function=delete&id_pembayaran=<?php echo $Get['id_pembayaran'] ?>">Delete</a>
+                    <a href="../Config/Routes.php?function=delete_pembayaran&id_pembayaran=<?php echo $Get['id_pembayaran'] ?>">Delete</a>
                 </td>
             </tr>
     <?php
