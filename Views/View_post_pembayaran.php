@@ -23,13 +23,9 @@ include('../Config/Csrf.php');
         </tr>
         <tr>
             <td>bulan dibayar</td>
-            <td><input type="text" name="bulan_dibayar" value="<?php echo $Get['bulan_dibayar']; ?>"></td>
-        </tr>
-        <tr>
-            <td>tahun dibayar</td>
 
-            <td> <label for="tahun_dibayar">Pilih tahun:</label>
-                <select id="tahun_dibayar" name="tahun_dibayar">
+            <td> <label for="bulan_dibayar">Pilih bulan:</label>
+                <select id="bulan_dibayar" name="bulan_dibayar">
                     <option value="Januari">Januari</option>
                     <option value="Februari">Februari</option>
                     <option value="Maret">Maret</option>
@@ -44,6 +40,10 @@ include('../Config/Csrf.php');
                     <option value="Desember">Desember</option>
                 </select>
             </td>
+        </tr>
+        <tr>
+            <td>tahun dibayar</td>
+            <td><input type="text" name="tahun_dibayar" value="<?php echo $Get['tahun_dibayar']; ?>"></td>
         </tr>
         <tr>
             <td>id spp</td>
