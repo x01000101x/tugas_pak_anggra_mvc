@@ -25,11 +25,11 @@ foreach ($GetPetugas as $Get) {
             </tr>
             <tr>
                 <td>username</td>
-                <td><input type="text" name="username" value="<?php echo $Get['username']; ?>"></td>
+                <td><input type="text" name="password" value="<?php echo $Get['password']; ?>"></td>
             </tr>
             <tr>
                 <td>password</td>
-                <td><input type="text" name="password" value="<?php echo $Get['password']; ?>"></td>
+                <td><input type="text" name="username" value="<?php echo $Get['username']; ?>"></td>
             </tr>
             <tr>
                 <td>nama petugas</td>

@@ -12,8 +12,8 @@ class Model_petugas
     var $result;
 
     var $id_petugas;
-    var $password;
     var $username;
+    var $password;
     var $level;
     var $nama_petugas;
 

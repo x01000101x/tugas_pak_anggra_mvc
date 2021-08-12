@@ -39,7 +39,7 @@ foreach ($GetPembayaran as $Get) {
                 <td>bulan dibayar</td>
 
                 <td> <label for="bulan_dibayar">Pilih bulan:</label>
-                    <select id="bulan_dibayar" name="bulan_dibayar">
+                    <select id="bulan_dibayar" name="bulan_dibayar" value="<?php echo $Get['bulan_dibayar']; ?>">
                         <option value="Januari">Januari</option>
                         <option value="Februari">Februari</option>
                         <option value="Maret">Maret</option>

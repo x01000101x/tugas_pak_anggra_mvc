@@ -17,7 +17,6 @@ foreach ($GetKelas as $Get) {
     <form action="../Config/Routes.php?function=put_kelas" method="POST">
         <input type="text" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
         <table border="1">
-            <input type="hidden" name="id_kelas" value="<?php echo $Get['id_kelas']; ?>">
 
             <tr>
                 <td>id kelas</td>

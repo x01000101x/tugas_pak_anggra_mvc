@@ -7,19 +7,19 @@ include('../Config/Csrf.php');
     <table border="1">
         <tr>
             <td>id pembayaran</td>
-            <td><input type="number" name="id_pembayaran" value="<?php echo $Get['id_pembayaran']; ?>"></td>
+            <td><input type="number" name="id_pembayaran"></td>
         </tr>
         <tr>
             <td>id petugas</td>
-            <td><input type="number" name="id_petugas" value="<?php echo $Get['id_petugas']; ?>"></td>
+            <td><input type="number" name="id_petugas"></td>
         </tr>
         <tr>
             <td>nisn</td>
-            <td><input type="number" name="nisn" value="<?php echo $Get['nisn']; ?>"></td>
+            <td><input type="number" name="nisn"></td>
         </tr>
         <tr>
             <td>tgl bayar</td>
-            <td><input type="number" name="tgl_bayar" value="<?php echo $Get['tgl_bayar']; ?>"></td>
+            <td><input type="number" name="tgl_bayar"></td>
         </tr>
         <tr>
             <td>bulan dibayar</td>
@@ -43,15 +43,15 @@ include('../Config/Csrf.php');
         </tr>
         <tr>
             <td>tahun dibayar</td>
-            <td><input type="text" name="tahun_dibayar" value="<?php echo $Get['tahun_dibayar']; ?>"></td>
+            <td><input type="number" name="tahun_dibayar"></td>
         </tr>
         <tr>
             <td>id spp</td>
-            <td><input type="number" name="id_spp" value="<?php echo $Get['id_spp']; ?>"></td>
+            <td><input type=" number" name="id_spp"></td>
         </tr>
         <tr>
             <td>jumlah bayar</td>
-            <td><input type="number" name="jumlah_bayar" value="<?php echo $Get['jumlah_bayar']; ?>"></td>
+            <td><input type="number" name="jumlah_bayar"></td>
         </tr>
         <tr>
             <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
