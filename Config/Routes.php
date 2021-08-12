@@ -8,6 +8,7 @@ include '../Controllers/Controller_siswa.php';
 include '../Controllers/Controller_petugas.php';
 include '../Controllers/Controller_spp.php';
 include '../Controllers/Controller_kelas.php';
+include '../Controllers/Controller_pembayaran.php';
 
 
 
@@ -158,4 +159,48 @@ elseif ($function == "delete_kelas") {
     $db_kelas = new Controller_kelas();
     $db_kelas->DELETEData($_GET['id_kelas']);
     header("location:../Views/View_kelas.php");
+}
+
+//Pembayaran
+// Decision variabel create
+if ($function == "create_pembayaran") {
+    $db = new Controller_pembayaran();
+    // Validasi Token CSRF
+    if (validation() == true) {
+        $db->POSTData(
+            $_POST['id_pembayaran'],
+            $_POST['id_petugas'],
+            $_POST['nisn'],
+            $_POST['tgl_bayar'],
+            $_POST['bulan_dibayar'],
+            $_POST['tahun_dibayar'],
+            $_POST['id_spp'],
+            $_POST['jumlah_dibayar']
+        );
+    }
+    header("location:../Views/View_pembayaran.php");
+}
+// Decision variabel put
+elseif ($function == "put_pembayaran") {
+    $db = new Controller_pembayaran();
+    // Validasi Token CSRF
+    if (validation() == true) {
+        $db->PUTData(
+            $_POST['id_pembayaran'],
+            $_POST['id_petugas'],
+            $_POST['nisn'],
+            $_POST['tgl_bayar'],
+            $_POST['bulan_dibayar'],
+            $_POST['tahun_dibayar'],
+            $_POST['id_spp'],
+            $_POST['jumlah_dibayar']
+        );
+    }
+    header("location:../Views/View_pembayaran.php");
+}
+// Decision variabel delete
+elseif ($function == "delete_pembayaran") {
+    $db = new Controller_pembayaran();
+    $db->DELETEData($_GET['id_pembayaran']);
+    header("location:../Views/View_pembayaran.php");
 }
