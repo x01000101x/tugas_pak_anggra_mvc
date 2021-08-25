@@ -57,8 +57,8 @@
             <th>Tanggal Dibayar</th>
             <th>Bulan Dibayar</th>
             <th>Tahun Dibayar</th>
-            <th>id_spp</th>
-            <th>jumlah_bayar</th>
+            <th>id spp</th>
+            <th>jumlah bayar</th>
         </tr>
         <?php
         // Decision validation variabel
