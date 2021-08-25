@@ -175,7 +175,7 @@ if ($function == "create_pembayaran") {
             $_POST['bulan_dibayar'],
             $_POST['tahun_dibayar'],
             $_POST['id_spp'],
-            $_POST['jumlah_dibayar']
+            $_POST['jumlah_bayar']
         );
     }
     header("location:../Views/View_pembayaran.php");
@@ -193,7 +193,7 @@ elseif ($function == "put_pembayaran") {
             $_POST['bulan_dibayar'],
             $_POST['tahun_dibayar'],
             $_POST['id_spp'],
-            $_POST['jumlah_dibayar']
+            $_POST['jumlah_bayar']
         );
     }
     header("location:../Views/View_pembayaran.php");
