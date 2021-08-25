@@ -15,7 +15,7 @@ foreach ($GetKelas as $Get) {
 ?>
 
     <form action="../Config/Routes.php?function=put_kelas" method="POST">
-        <input type="text" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
+        <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
         <table border="1">
 
             <tr>
