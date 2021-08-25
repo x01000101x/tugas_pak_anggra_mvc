@@ -107,6 +107,6 @@ class Model_pembayaran
     {
 
         // perintah DELETE data
-        mysqli_query($this->con, "delete from pembayaran where id_$id_pembayaran='$id_pembayaran'");
+        mysqli_query($this->con, "delete from pembayaran where id_pembayaran='$id_pembayaran'");
     }
 }
