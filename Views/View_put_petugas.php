@@ -15,7 +15,7 @@ foreach ($GetPetugas as $Get) {
 ?>
 
     <form action="../Config/Routes.php?function=put_petugas" method="POST">
-        <input type="text" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
+        <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
         <table border="1">
             <input type="hidden" name="id_petugas" value="<?php echo $Get['id_petugas']; ?>">
 
