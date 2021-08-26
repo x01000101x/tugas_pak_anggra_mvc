@@ -8,7 +8,7 @@ include '../Controllers/Controller_spp.php';
 $spp = new Controller_spp();
 
 $id_spp = base64_decode($_GET['id_spp']);
-$GetSpp = $spp->GetData_Where($_GET[$id_spp]);
+$GetSpp = $spp->GetData_Where($id_spp);
 ?>
 
 
