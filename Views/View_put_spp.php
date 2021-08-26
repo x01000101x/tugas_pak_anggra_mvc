@@ -6,7 +6,9 @@ include('../Config/Csrf.php');
 include '../Controllers/Controller_spp.php';
 // Membuat Object dari Class spp
 $spp = new Controller_spp();
-$GetSpp = $spp->GetData_Where($_GET['id_spp']);
+
+$id_spp = base64_decode($_GET['id_spp']);
+$GetSpp = $spp->GetData_Where($_GET[$id_spp]);
 ?>
 
 

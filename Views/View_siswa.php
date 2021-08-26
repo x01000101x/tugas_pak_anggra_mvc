@@ -34,6 +34,7 @@
     include '../Controllers/Controller_siswa.php';
     // Membuat Object dari Class siswa
     $siswa = new Controller_siswa();
+
     $GetSiswa = $siswa->GetData_All();
 
     // untuk mengecek di object $siswa ada berapa banyak Property
