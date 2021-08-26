@@ -75,8 +75,8 @@
                     <td><?php echo $Get['no_telp']; ?></td>
                     <td><?php echo $Get['id_spp']; ?></td>
                     <td>
-                        <a href="../Views/View_put_siswa.php?nisn=<?php echo $Get['nisn'] ?>">view</a>
-                        <a href="../Config/Routes.php?function=delete&nisn=<?php echo $Get['nisn'] ?>">Delete</a>
+                        <a href="../Views/View_put_siswa.php?nisn=<?php echo base64_encode($Get['nisn']); ?>">view</a>
+                        <a href="../Config/Routes.php?function=delete&nisn=<?php echo $Get['nisn']; ?>">Delete</a>
                     </td>
                 </tr>
         <?php
