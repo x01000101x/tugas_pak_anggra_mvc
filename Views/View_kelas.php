@@ -68,7 +68,9 @@
                     <td><?php echo $Get['kompetensi_keahlian']; ?></td>
                     <td>
                         <a href="../Views/View_put_kelas.php?id_kelas=<?php echo base64_encode($Get['id_kelas']) ?>">view</a>
-                        <a href="../Config/Routes.php?function=delete_kelas&id_kelas=<?php echo base64_encode($Get['id_kelas']) ?>">Delete</a>
+
+                        <a onclick="konfirmasi(<?= $Get['id_kelas'] ?>)">Delete</a>
+
                     </td>
                 </tr>
         <?php
@@ -76,6 +78,13 @@
         }
         ?>
     </table>
+    <script>
+        function konfirmasi(id_kelas) {
+            if (window.confirm("Apakah anda ingin menghapus data ini?")) {
+                window.location.href = '../Config/Routes.php?function=delete_kelas&id_kelas=<?php echo base64_encode($Get['id_kelas']) ?>';
+            }
+        }
+    </script>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
