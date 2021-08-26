@@ -8,7 +8,7 @@ include '../Controllers/Controller_kelas.php';
 $kelas = new Controller_kelas();
 
 $id_kelas = base64_decode($_GET['id_kelas']);
-$GetKelas = $kelas->GetData_Where($_GET[$id_kelas]);
+$GetKelas = $kelas->GetData_Where($id_kelas);
 ?>
 
 
