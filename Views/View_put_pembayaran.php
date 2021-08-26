@@ -6,7 +6,9 @@ include('../Config/Csrf.php');
 include '../Controllers/Controller_pembayaran.php';
 // Membuat Object dari Class pembayaran
 $pembayaran = new Controller_pembayaran();
-$GetPembayaran = $pembayaran->GetData_Where($_GET['id_pembayaran']);
+
+$id_pembayaran = base64_decode($_GET['id_pembayaran']);
+$GetPembayaran = $pembayaran->GetData_Where($_GET[$id_pembayaran]);
 ?>
 
 
