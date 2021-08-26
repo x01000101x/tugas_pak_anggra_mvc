@@ -8,7 +8,7 @@ include '../Controllers/Controller_pembayaran.php';
 $pembayaran = new Controller_pembayaran();
 
 $id_pembayaran = base64_decode($_GET['id_pembayaran']);
-$GetPembayaran = $pembayaran->GetData_Where($_GET[$id_pembayaran]);
+$GetPembayaran = $pembayaran->GetData_Where($id_pembayaran);
 ?>
 
 
