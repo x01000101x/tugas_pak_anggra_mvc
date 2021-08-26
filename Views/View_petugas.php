@@ -73,8 +73,8 @@
                     <td><?php echo $Get['level']; ?></td>
 
                     <td>
-                        <a href="../Views/View_put_petugas.php?id_petugas=<?php echo $Get['id_petugas'] ?>">view</a>
-                        <a href="../Config/Routes.php?function=delete_petugas&id_petugas=<?php echo $Get['id_petugas'] ?>">Delete</a>
+                        <a href="../Views/View_put_petugas.php?id_petugas=<?php echo base64_encode($Get['id_petugas']); ?>">view</a>
+                        <a href="../Config/Routes.php?function=delete_petugas&id_petugas=<?php echo $Get['id_petugas']; ?>">Delete</a>
                     </td>
                 </tr>
         <?php
