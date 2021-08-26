@@ -6,7 +6,9 @@ include('../Config/Csrf.php');
 include '../Controllers/Controller_kelas.php';
 // Membuat Object dari Class kelas
 $kelas = new Controller_kelas();
-$GetKelas = $kelas->GetData_Where($_GET['id_kelas']);
+
+$id_kelas = base64_decode($_GET['id_kelas']);
+$GetKelas = $kelas->GetData_Where($_GET[$id_kelas]);
 ?>
 
 
