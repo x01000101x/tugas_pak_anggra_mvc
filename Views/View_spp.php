@@ -66,8 +66,8 @@
                     <td><?php echo $Get['tahun']; ?></td>
                     <td><?php echo "Rp. " . $Get['nominal']; ?></td>
                     <td>
-                        <a href="../Views/View_put_spp.php?id_spp=<?php echo base64_encode($Get['id_spp']); ?>">view</a>
-                        <a href="../Config/Routes.php?function=delete_spp&id_spp=<?php echo $Get['id_spp']; ?>">Delete</a>
+                        <a href="../Views/View_put_spp.php?id_spp=<?php echo base64_encode($Get['id_spp']) ?>">view</a>
+                        <a href="../Config/Routes.php?function=delete_spp&id_spp=<?php echo base64_encode($Get['id_spp']) ?>">Delete</a>
                     </td>
                 </tr>
         <?php
