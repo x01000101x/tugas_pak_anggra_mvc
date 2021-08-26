@@ -67,8 +67,8 @@
                     <td><?php echo $Get['nama_kelas']; ?></td>
                     <td><?php echo $Get['kompetensi_keahlian']; ?></td>
                     <td>
-                        <a href="../Views/View_put_kelas.php?id_kelas=<?php echo $Get['id_kelas'] ?>">view</a>
-                        <a href="../Config/Routes.php?function=delete_kelas&id_kelas=<?php echo $Get['id_kelas'] ?>">Delete</a>
+                        <a href="../Views/View_put_kelas.php?id_kelas=<?php echo base64_encode($Get['id_kelas']); ?>">view</a>
+                        <a href="../Config/Routes.php?function=delete_kelas&id_kelas=<?php echo $Get['id_kelas']; ?>">Delete</a>
                     </td>
                 </tr>
         <?php
