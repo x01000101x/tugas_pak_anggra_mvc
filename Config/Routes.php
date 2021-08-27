@@ -130,10 +130,10 @@ elseif ($function == "delete_spp") {
 //Kelas
 // Decision variabel create p
 if ($function == "create_kelas") {
-    $db_kelas = new Controller_kelas();
+    $db = new Controller_kelas();
     // Validasi Token CSRF
     if (validation() == true) {
-        $db_kelas->POSTData(
+        $db->POSTData(
             $_POST['id_kelas'],
             $_POST['nama_kelas'],
             $_POST['kompetensi_keahlian']
@@ -143,10 +143,10 @@ if ($function == "create_kelas") {
 }
 // Decision variabel put
 elseif ($function == "put_kelas") {
-    $db_kelas = new Controller_kelas();
+    $db = new Controller_kelas();
     // Validasi Token CSRF
     if (validation() == true) {
-        $db_kelas->PUTData(
+        $db->PUTData(
             $_POST['id_kelas'],
             $_POST['nama_kelas'],
             $_POST['kompetensi_keahlian']
@@ -156,8 +156,8 @@ elseif ($function == "put_kelas") {
 }
 // Decision variabel delete
 elseif ($function == "delete_kelas") {
-    $db_kelas = new Controller_kelas();
-    $db_kelas->DELETEData($_GET['id_kelas']);
+    $db = new Controller_kelas();
+    $db->DELETEData($_GET['id_kelas']);
     header("location:../Views/View_kelas.php");
 }
 
