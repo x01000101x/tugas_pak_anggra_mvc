@@ -124,7 +124,8 @@ elseif ($function == "put_spp") {
 // Decision variabel delete
 elseif ($function == "delete_spp") {
     $db = new Controller_spp();
-    $db->DELETEData($_GET['id_spp']);
+    $id_spp = base64_decode($_GET['id_spp']);
+    $db->DELETEData($id_spp);
     header("location:../Views/View_spp.php");
 }
 //Kelas
