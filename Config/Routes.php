@@ -128,6 +128,8 @@ elseif ($function == "delete_spp") {
     $db->DELETEData($id_spp);
     header("location:../Views/View_spp.php");
 }
+
+
 //Kelas
 // Decision variabel create p
 if ($function == "create_kelas") {
