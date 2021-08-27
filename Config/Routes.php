@@ -59,10 +59,10 @@ elseif ($function == "delete") {
 //PETUGAS
 // Decision variabel create p
 if ($function == "create_petugas") {
-    $db_petugas = new Controller_petugas();
+    $db = new Controller_petugas();
     // Validasi Token CSRF
     if (validation() == true) {
-        $db_petugas->POSTData(
+        $db->POSTData(
             $_POST['id_petugas'],
             $_POST['username'],
             $_POST['password'],
@@ -74,10 +74,10 @@ if ($function == "create_petugas") {
 }
 // Decision variabel put
 elseif ($function == "put_petugas") {
-    $db_petugas = new Controller_petugas();
+    $db = new Controller_petugas();
     // Validasi Token CSRF
     if (validation() == true) {
-        $db_petugas->PUTData(
+        $db->PUTData(
             $_POST['id_petugas'],
             $_POST['username'],
             $_POST['password'],
@@ -89,8 +89,8 @@ elseif ($function == "put_petugas") {
 }
 // Decision variabel delete
 elseif ($function == "delete_petugas") {
-    $db_petugas = new Controller_petugas();
-    $db_petugas->DELETEData($_GET['id_petugas']);
+    $db = new Controller_petugas();
+    $db->DELETEData($_GET['id_petugas']);
     header("location:../Views/View_petugas.php");
 }
 
