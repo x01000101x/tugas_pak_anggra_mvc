@@ -97,10 +97,10 @@ elseif ($function == "delete_petugas") {
 //SPP
 // Decision variabel create p
 if ($function == "create_spp") {
-    $db_spp = new Controller_spp();
+    $db = new Controller_spp();
     // Validasi Token CSRF
     if (validation() == true) {
-        $db_spp->POSTData(
+        $db->POSTData(
             $_POST['id_spp'],
             $_POST['tahun'],
             $_POST['nominal']
@@ -110,10 +110,10 @@ if ($function == "create_spp") {
 }
 // Decision variabel put
 elseif ($function == "put_spp") {
-    $db_spp = new Controller_spp();
+    $db = new Controller_spp();
     // Validasi Token CSRF
     if (validation() == true) {
-        $db_spp->PUTData(
+        $db->PUTData(
             $_POST['id_spp'],
             $_POST['tahun'],
             $_POST['nominal']
@@ -123,8 +123,8 @@ elseif ($function == "put_spp") {
 }
 // Decision variabel delete
 elseif ($function == "delete_spp") {
-    $db_spp = new Controller_spp();
-    $db_spp->DELETEData($_GET['id_spp']);
+    $db = new Controller_spp();
+    $db->DELETEData($_GET['id_spp']);
     header("location:../Views/View_spp.php");
 }
 //Kelas
