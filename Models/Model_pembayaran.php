@@ -95,7 +95,7 @@ class Model_pembayaran
             tahun_dibayar='" . $tahun_dibayar . "',
             id_spp='" . $id_spp . "',
             jumlah_bayar='" . $jumlah_bayar . "'
-            where id_$id_pembayaran='" . $id_pembayaran . "'
+            where id_pembayaran='" . $id_pembayaran . "'
             ");
     }
 

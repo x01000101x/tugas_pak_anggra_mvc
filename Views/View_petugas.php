@@ -85,7 +85,7 @@
     <script>
         function konfirmasi(id_petugas) {
             if (window.confirm("Apakah anda ingin menghapus data ini?")) {
-                window.location.href = '.. / Config / Routes.php ? function = delete_kelas & id_kelas = <?php echo base64_encode($Get['id_petugas']) ?>';
+                window.location.href = '../Config/Routes.php?function=delete_kelas&id_kelas=<?php echo base64_encode($Get['id_petugas']) ?>';
             }
         }
     </script>
