@@ -78,7 +78,7 @@
                     <td><?php echo $Get['jumlah_bayar']; ?></td>
                     <td>
                         <a href="../Views/View_put_pembayaran.php?id_pembayaran=<?php echo base64_encode($Get['id_pembayaran']) ?>">view</a>
-                        <a href="../Config/Routes.php?function=delete_pembayaran&id_pembayaran=<?php echo base64_encode($Get['id_pembayaran']) ?>">Delete</a>
+                        <a onclick="konfirmasi(<?php echo ($Get['id_pembayaran']) ?>)">Delete</a>
                     </td>
                 </tr>
         <?php
@@ -86,7 +86,13 @@
         }
         ?>
     </table>
-
+    <script>
+        function konfirmasi(id_pembayaran) {
+            if (window.confirm("Apakah anda ingin menghapus data ini?")) {
+                window.location.href = '../Config/Routes.php?function=delete_pembayaran&id_pembayaran=<?php echo base64_encode($Get['id_pembayaran']) ?>';
+            }
+        }
+    </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
