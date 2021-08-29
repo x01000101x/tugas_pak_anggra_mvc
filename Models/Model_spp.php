@@ -77,6 +77,7 @@ class Model_spp
 
         // perintah PUT data
         mysqli_query($this->con, "update spp set
+        id_spp='" . $id_spp . "',
             tahun='" . $tahun . "',
             nominal='" . $nominal . "',
             where id_spp='" . $id_spp . "'

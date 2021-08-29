@@ -79,7 +79,8 @@ class Model_kelas
         mysqli_query($this->con, "update kelas set
             id_kelas='" . $id_kelas . "',
             nama_kelas='" . $nama_kelas . "',
-            kompetensi_keahlian='" . $kompetensi_keahlian . "'
+            kompetensi_keahlian='" . $kompetensi_keahlian . "',
+            whee id_kelas = '" . $id_kelas . "'
             ");
     }
 

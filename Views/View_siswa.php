@@ -76,7 +76,7 @@
                     <td><?php echo $Get['id_spp']; ?></td>
                     <td>
                         <a href="../Views/View_put_siswa.php?nisn=<?php echo base64_encode($Get['nisn']) ?>">view</a>
-                        <!-- <button onclick="konfirmasi(<?php echo $Get['nisn'] ?>)">Delete</button> -->
+                        <a onclick="konfirmasi(<?php echo $Get['nisn'] ?>)">Delete</a>
                     </td>
                 </tr>
         <?php
@@ -86,10 +86,10 @@
     </table>
 
     <script>
-        // function konfirmasi(nisn) {
-        //     if (window.confirm("Apakah anda ingin menghapus data ini?")) {
-        //         window.location.href = '../Config/Routes.php?function=delete&nisn=<?php echo base64_encode($Get['nisn']) ?>';
-        //     };
+        function konfirmasi(nisn) {
+            if (window.confirm("Apakah anda ingin menghapus data ini?")) {
+                window.location.href = '../Config/Routes.php?function=delete_spp&nisn=<?php echo base64_encode($Get['nisn']) ?>';
+            };
         }
     </script>
 
