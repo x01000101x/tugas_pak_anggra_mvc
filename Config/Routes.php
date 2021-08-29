@@ -52,7 +52,8 @@ elseif ($function == "put") {
 // Decision variabel delete
 elseif ($function == "delete") {
     $db = new Controller_siswa();
-    $db->DELETEData($_GET['nisn']);
+    $nisn = base64_decode($_GET['nisn']);
+    $db->DELETEData($nisn);
     header("location:../Views/View_siswa.php");
 }
 
