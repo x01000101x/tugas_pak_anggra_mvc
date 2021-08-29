@@ -90,7 +90,8 @@ elseif ($function == "put_petugas") {
 // Decision variabel delete
 elseif ($function == "delete_petugas") {
     $db = new Controller_petugas();
-    $db->DELETEData($_GET['id_petugas']);
+    $id_petugas = base64_decode($_GET['id_petugas']);
+    $db->DELETEData($id_petugas);
     header("location:../Views/View_petugas.php");
 }
 
@@ -161,7 +162,7 @@ elseif ($function == "put_kelas") {
 elseif ($function == "delete_kelas") {
     $db = new Controller_kelas();
     $id_kelas = base64_decode($_GET['id_kelas']);
-    $db->DELETEData($id_spp);
+    $db->DELETEData($id_kelas);
     header("location:../Views/View_kelas.php");
 }
 
