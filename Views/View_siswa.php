@@ -88,7 +88,7 @@
     <script>
         function konfirmasi(nisn) {
             if (window.confirm("Apakah anda ingin menghapus data ini?")) {
-                window.location.href = '../Config/Routes.php?function=delete_siswa&nisn=<?php echo base64_encode($Get['nisn']) ?>';
+                window.location.href = '../Config/Routes.php?function=delete&nisn=<?php echo base64_encode($Get['nisn']) ?>';
             };
         }
     </script>

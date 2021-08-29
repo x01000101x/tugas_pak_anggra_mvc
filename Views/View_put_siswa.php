@@ -8,7 +8,7 @@ include '../Controllers/Controller_siswa.php';
 $siswa = new Controller_siswa();
 
 $nisn = base64_decode($_GET['nisn']);
-$GetSiswa = $siswa->GetData_Where($id_kelas);
+$GetSiswa = $siswa->GetData_Where($nisn);
 ?>
 
 
