@@ -206,6 +206,7 @@ elseif ($function == "put_pembayaran") {
 // Decision variabel delete
 elseif ($function == "delete_pembayaran") {
     $db = new Controller_pembayaran();
-    $db->DELETEData($_GET['id_pembayaran']);
+    $id_pembayaran = base64_decode($_GET['id_pembayaran']);
+    $db->DELETEData($id_pembayaran);
     header("location:../Views/View_pembayaran.php");
 }
