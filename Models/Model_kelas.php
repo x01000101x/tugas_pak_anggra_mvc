@@ -80,7 +80,7 @@ class Model_kelas
             id_kelas='" . $id_kelas . "',
             nama_kelas='" . $nama_kelas . "',
             kompetensi_keahlian='" . $kompetensi_keahlian . "',
-            whee id_kelas = '" . $id_kelas . "'
+            where id_kelas = '" . $id_kelas . "'
             ");
     }
 

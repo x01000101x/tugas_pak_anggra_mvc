@@ -3,7 +3,7 @@
 include('../Config/Csrf.php');
 ?>
 <form action="../Config/Routes.php?function=create_kelas" method="POST">
-    <input type="text" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
+    <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
     <table border="1">
         <tr>
             <td>id kelas</td>
