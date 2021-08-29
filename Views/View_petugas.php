@@ -82,6 +82,13 @@
         }
         ?>
     </table>
+    <script>
+        function konfirmasi(id_petugas) {
+            if (window.confirm("Apakah anda ingin menghapus data ini?")) {
+                window.location.href = '.. / Config / Routes.php ? function = delete_kelas & id_kelas = <?php echo base64_encode($Get['id_petugas']) ?>';
+            }
+        }
+    </script>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
