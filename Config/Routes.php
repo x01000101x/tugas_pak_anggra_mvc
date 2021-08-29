@@ -160,7 +160,8 @@ elseif ($function == "put_kelas") {
 // Decision variabel delete
 elseif ($function == "delete_kelas") {
     $db = new Controller_kelas();
-    $db->DELETEData($_GET['id_kelas']);
+    $id_kelas = base64_decode($_GET['id_kelas']);
+    $db->DELETEData($id_spp);
     header("location:../Views/View_kelas.php");
 }
 
