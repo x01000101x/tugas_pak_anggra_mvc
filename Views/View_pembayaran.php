@@ -78,7 +78,7 @@
                     <td><?php echo $Get['jumlah_bayar']; ?></td>
                     <td>
                         <a class="btn btn-warning" href="../Views/View_put_pembayaran.php?id_pembayaran=<?php echo base64_encode($Get['id_pembayaran']) ?>">view</a>
-                        <a onclick="konfirmasi(<?php echo ($Get['id_pembayaran']) ?>)">Delete</a>
+                        <a class="btn btn-danger" onclick="konfirmasi(<?php echo ($Get['id_pembayaran']) ?>)">Delete</a>
                     </td>
                 </tr>
         <?php
