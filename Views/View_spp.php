@@ -67,7 +67,7 @@
                     <td><?php echo "Rp. " . $Get['nominal']; ?></td>
                     <td>
                         <a class="btn btn-warning" href="../Views/View_put_spp.php?id_spp=<?php echo base64_encode($Get['id_spp']) ?>">view</a>
-                        <button onclick="konfirmasi(<?php echo $Get['id_spp'] ?>)">Delete</button>
+                        <button class="btn btn-danger" onclick="konfirmasi(<?php echo $Get['id_spp'] ?>)">Delete</button>
                     </td>
                 </tr>
         <?php
