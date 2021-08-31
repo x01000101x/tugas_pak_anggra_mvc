@@ -76,7 +76,7 @@
                     <td><?php echo $Get['id_spp']; ?></td>
                     <td>
                         <a class="btn btn-warning" href="../Views/View_put_siswa.php?nisn=<?php echo base64_encode($Get['nisn']) ?>">view</a>
-                        <a onclick="konfirmasi(<?php echo $Get['nisn'] ?>)">Delete</a>
+                        <a class="btn btn-danger" onclick="konfirmasi(<?php echo $Get['nisn'] ?>)">Delete</a>
                     </td>
                 </tr>
         <?php
