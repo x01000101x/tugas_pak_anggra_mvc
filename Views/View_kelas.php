@@ -68,7 +68,7 @@
                     <td><?php echo $Get['kompetensi_keahlian']; ?></td>
                     <td>
                         <a class="btn btn-warning" href="../Views/View_put_kelas.php?id_kelas=<?php echo base64_encode($Get['id_kelas']) ?>">view</a>
-                        <a onclick="konfirmasi(<?php echo $Get['id_kelas'] ?>)">Delete</a>
+                        <a class="btn btn-danger" onclick="konfirmasi(<?php echo $Get['id_kelas'] ?>)">Delete</a>
 
                     </td>
                 </tr>
