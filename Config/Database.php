@@ -8,7 +8,7 @@ class Database
 	var $host = "db4free.net";
 	var $uname = "siswasiswirk4";
 	var $pass = "akubisacoding";
-	var $db = "";
+	var $db = "pbo_pak_anggra_4";
 	var $connection;
 
 	// Method koneksi kedalam database
