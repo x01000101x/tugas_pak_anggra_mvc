@@ -7,25 +7,25 @@ include('../Config/Csrf.php');
     <table border="1">
         <tr>
             <td>id pembayaran</td>
-            <td><input type="number" name="id_pembayaran"></td>
+            <td><input type="number" name="id_pembayaran" required></td>
         </tr>
         <tr>
             <td>id petugas</td>
-            <td><input type="number" name="id_petugas"></td>
+            <td><input type="number" name="id_petugas" required></td>
         </tr>
         <tr>
             <td>nisn</td>
-            <td><input type="number" name="nisn"></td>
+            <td><input type="number" name="nisn" required></td>
         </tr>
         <tr>
             <td>tgl bayar</td>
-            <td><input type="number" name="tgl_bayar"></td>
+            <td><input type="number" name="tgl_bayar" required></td>
         </tr>
         <tr>
             <td>bulan dibayar</td>
 
             <td> <label for="bulan_dibayar">Pilih bulan:</label>
-                <select id="bulan_dibayar" name="bulan_dibayar">
+                <select id="bulan_dibayar" name="bulan_dibayar" required>
                     <option value="Januari">Januari</option>
                     <option value="Februari">Februari</option>
                     <option value="Maret">Maret</option>
@@ -43,15 +43,15 @@ include('../Config/Csrf.php');
         </tr>
         <tr>
             <td>tahun dibayar</td>
-            <td><input type="number" name="tahun_dibayar"></td>
+            <td><input type="number" name="tahun_dibayar" required></td>
         </tr>
         <tr>
             <td>id spp</td>
-            <td><input type=" number" name="id_spp"></td>
+            <td><input type=" number" name="id_spp" required></td>
         </tr>
         <tr>
             <td>jumlah bayar</td>
-            <td><input type="number" name="jumlah_bayar"></td>
+            <td><input type="number" name="jumlah_bayar" required></td>
         </tr>
         <tr>
             <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
