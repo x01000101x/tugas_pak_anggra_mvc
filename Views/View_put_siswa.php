@@ -43,7 +43,7 @@ foreach ($GetSiswa as $Get) {
             </tr>
             <tr>
                 <td>no_telp</td>
-                <td><input type="text" name="no_telp" value="<?php echo $Get['no_telp']; ?>"></td>
+                <td><input type="number" name="no_telp" value="<?php echo $Get['no_telp']; ?>"></td>
             </tr>
             <tr>
                 <td>id_spp</td>
