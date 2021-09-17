@@ -23,7 +23,6 @@
                     <li class="nav-item"><a class="nav-link" href="Views/View_kelas.php">Kelas</a></li>
                     <li class="nav-item"><a class="nav-link" href="Views/View_spp.php">SPP</a></li>
                     <li class="nav-item"><a class="nav-link" href="Views/View_pembayaran.php">Pembayaran</a></li>
-
                 </ul>
             </div>
         </div>
