@@ -23,25 +23,25 @@ foreach ($GetPembayaran as $Get) {
 
             <tr>
                 <td>id pembayaran</td>
-                <td><input type="number" name="id_pembayaran" value="<?php echo $Get['id_pembayaran']; ?>"></td>
+                <td><input type="number" required name="id_pembayaran" value="<?php echo $Get['id_pembayaran']; ?>"></td>
             </tr>
             <tr>
                 <td>id petugas</td>
-                <td><input type="number" name="id_petugas" value="<?php echo $Get['id_petugas']; ?>"></td>
+                <td><input type="number" required name="id_petugas" value="<?php echo $Get['id_petugas']; ?>"></td>
             </tr>
             <tr>
                 <td>nisn</td>
-                <td><input type="number" name="nisn" value="<?php echo $Get['nisn']; ?>"></td>
+                <td><input type="number" required name="nisn" value="<?php echo $Get['nisn']; ?>"></td>
             </tr>
             <tr>
                 <td>tgl bayar</td>
-                <td><input type="number" name="tgl_bayar" value="<?php echo $Get['tgl_bayar']; ?>"></td>
+                <td><input type="number" required name="tgl_bayar" value="<?php echo $Get['tgl_bayar']; ?>"></td>
             </tr>
             <tr>
                 <td>bulan dibayar</td>
 
                 <td> <label for="bulan_dibayar">Pilih bulan:</label>
-                    <select id="bulan_dibayar" name="bulan_dibayar" value="<?php echo $Get['bulan_dibayar']; ?>">
+                    <select id="bulan_dibayar" required name="bulan_dibayar" value="<?php echo $Get['bulan_dibayar']; ?>">
                         <option value="Januari">Januari</option>
                         <option value="Februari">Februari</option>
                         <option value="Maret">Maret</option>
@@ -59,15 +59,15 @@ foreach ($GetPembayaran as $Get) {
             </tr>
             <tr>
                 <td>tahun dibayar</td>
-                <td><input type="number" name="tahun_dibayar" value="<?php echo $Get['tahun_dibayar']; ?>"></td>
+                <td><input type="number" required name="tahun_dibayar" value="<?php echo $Get['tahun_dibayar']; ?>"></td>
             </tr>
             <tr>
                 <td>id spp</td>
-                <td><input type="number" name="id_spp" value="<?php echo $Get['id_spp']; ?>"></td>
+                <td><input type="number" required name="id_spp" value="<?php echo $Get['id_spp']; ?>"></td>
             </tr>
             <tr>
                 <td>jumlah bayar</td>
-                <td><input type="number" name="jumlah_bayar" value="<?php echo $Get['jumlah_bayar']; ?>"></td>
+                <td><input type="number" required name="jumlah_bayar" value="<?php echo $Get['jumlah_bayar']; ?>"></td>
             </tr>
             <tr>
                 <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
