@@ -27,7 +27,7 @@ include('../Config/Csrf.php');
             </td>
         <tr>
             <td>No Telepon</td>
-            <td><input type="text" name="no_telp">
+            <td>62<input type="number" name="no_telp">
             </td>
         </tr>
         <tr>
