@@ -6,9 +6,9 @@ class Database
 
 	// Property
 	var $host = "db4free.net";
-	var $uname = "root";
-	var $pass = "";
-	var $db = "learn_smkn4";
+	var $uname = "siswasiswirk4";
+	var $pass = "akubisacoding";
+	var $db = "";
 	var $connection;
 
 	// Method koneksi kedalam database
