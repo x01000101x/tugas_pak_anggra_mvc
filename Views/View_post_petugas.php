@@ -7,25 +7,25 @@ include('../Config/Csrf.php');
     <table border="1">
         <tr>
             <td>id petugas</td>
-            <td><input type="number" name="id_petugas"></td>
+            <td><input type="number" name="id_petugas" required></td>
         </tr>
         <tr>
             <td>username</td>
-            <td><input type="text" name="username"></td>
+            <td><input type="text" name="username" required></td>
         </tr>
         <tr>
             <td>password</td>
-            <td><input type="password" name="password"></td>
+            <td><input type="password" name="password" required></td>
         </tr>
         <tr>
             <td>nama petugas</td>
-            <td><input type="text" name="nama_petugas">
+            <td><input type="text" name="nama_petugas" required>
             </td>
         <tr>
             <td>level</td>
 
             <td> <label for="level">Pilih level:</label>
-                <select id="level" name="level">
+                <select id="level" name="level" required>
                     <option value="Administrator">Administrator</option>
                     <option value="Petugas">Petugas</option>
                 </select>
