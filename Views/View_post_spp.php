@@ -7,15 +7,15 @@ include('../Config/Csrf.php');
     <table border="1">
         <tr>
             <td>id spp</td>
-            <td><input type="number" name="id_spp"></td>
+            <td><input type="number" name="id_spp" required></td>
         </tr>
         <tr>
             <td>tahun</td>
-            <td><input type="number" name="tahun"></td>
+            <td><input type="number" name="tahun" required></td>
         </tr>
         <tr>
             <td>nominal (Rp.)</td>
-            <td><input type="number" name="nominal"></td>
+            <td><input type="number" name="nominal" required></td>
         </tr>
         <tr>
             <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
