@@ -48,7 +48,7 @@
     <h3><a href="View_post_petugas.php">Add Data</a></h3>
 
 
-    <table border="1">
+    <table class="table table-bordered" border="1">
         <tr>
             <th>No</th>
             <th>ID Petugas</th>
