@@ -1,13 +1,38 @@
-<?php
-// Memanggil fungsi dari CSRF
-include('../Config/Csrf.php');
-?>
-<form action="../Config/Routes.php?function=create_kelas" method="POST">
-    <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
-    <table border="1">
-        <tr>
-            <td>id kelas</td>
-            <td><input type="number" name="id_kelas" required></td>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kelas</title>
+</head>
+
+<body>
+
+
+    <?php
+    // Memanggil fungsi dari CSRF
+    include('../Config/Csrf.php');
+    ?>
+    <form action="../Config/Routes.php?function=create_kelas" method="POST">
+        <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
+        <div class="mb-3">
+            <label for="id_kelas" class="form-label">id kelas</label>
+            <input type="number" class="form-control" id="id_kelas" name="id_kelas" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <td>id kelas</td>
+        <td><input type="number" name="id_kelas" required></td>
         </tr>
         <tr>
             <td>nama kelas</td>
@@ -20,4 +45,13 @@ include('../Config/Csrf.php');
         <tr>
             <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
         </tr>
-    </table </form>
+        </table </form>
+
+</body>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+
+</html>
