@@ -19,16 +19,12 @@
     <form action="../Config/Routes.php?function=create_kelas" method="POST">
         <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
         <div class="mb-3">
-            <label for="id_kelas" class="form-label">id kelas</label>
+            <label for="id_kelas" class="form-label">ID Kelas</label>
             <input type="number" class="form-control" id="id_kelas" name="id_kelas" aria-describedby="emailHelp" required>
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <label for="id_kelas" class="form-label">Nama Kelas</label>
+            <input type="text" class="form-control" id="id_kelas" name="id_kelas" aria-describedby="emailHelp" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
         <td>id kelas</td>
@@ -45,7 +41,7 @@
         <tr>
             <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
         </tr>
-        </table </form>
+    </form>
 
 </body>
 

@@ -38,4 +38,5 @@ include('../Config/Csrf.php');
         <tr>
             <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
         </tr>
-    </table </form>
+    </table>
+</form>

@@ -42,8 +42,6 @@
     ?>
 
     <br>
-    <h1>OOP - Class, Object, Property, Method With <u>MVC</u></h1>
-    <h2>CRUD and CSRF</h2>
     <h3>Table kelas</h3>
     <h3><a class="btn btn-success" href="View_post_kelas.php">Add Data</a>
     </h3>
