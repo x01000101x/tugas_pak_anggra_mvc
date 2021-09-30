@@ -9,6 +9,24 @@
     <title>Siswa</title>
 </head>
 
+<style>
+    body {
+        background-color: black;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    td,
+    a {
+        color: white;
+    }
+</style>
+
 <body>
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,14 +60,12 @@
     ?>
 
     <br>
-    <h1>OOP - Class, Object, Property, Method With <u>MVC</u></h1>
-    <h2>CRUD and CSRF</h2>
     <h3>Table Siswa</h3>
     <h3><a class="btn btn-success" href="View_post_siswa.php">Add Data</a></h3>
 
 
     <table class="table table-bordered" border="1">
-        <tr>
+        <tr class="table-light">
             <th>No</th>
             <th>NISN</th>
             <th>NIS</th>
@@ -58,6 +74,7 @@
             <th>Alamat</th>
             <th>No Telepon</th>
             <th>ID Spp</th>
+            <th>Action</th>
         </tr>
         <?php
         // Decision validation variabel
