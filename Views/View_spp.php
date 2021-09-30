@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>SPP</title>
 </head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    td,
+    a {
+        color: white;
+    }
+</style>
 
 <body>
     <!-- Responsive navbar-->
@@ -48,11 +65,12 @@
 
 
     <table class="table table-bordered" border="1">
-        <tr>
+        <tr class="table-light">
             <th>No</th>
             <th>ID spp</th>
             <th>Tahun</th>
             <th>Nominal</th>
+            <th>Action</th>
         </tr>
         <?php
         // Decision validation variabel
