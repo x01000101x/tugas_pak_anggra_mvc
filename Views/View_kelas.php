@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Kelas</title>
 </head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    td,
+    a {
+        color: white;
+    }
+</style>
 
 <body>
     <!-- Responsive navbar-->
@@ -42,17 +59,21 @@
     ?>
 
     <br>
+    <h1>OOP - Class, Object, Property, Method With <u>MVC</u></h1>
+    <h2>CRUD and CSRF</h2>
     <h3>Table kelas</h3>
     <h3><a class="btn btn-success" href="View_post_kelas.php">Add Data</a>
     </h3>
 
 
     <table class="table table-bordered" border="1">
-        <tr>
+        <tr class="table-light">
             <th>No</th>
             <th>ID Kelas</th>
             <th>Nama Kelas</th>
             <th>Kompetensi Keahlian</th>
+            <th>Action</th>
+
         </tr>
         <?php
         // Decision validation variabel
