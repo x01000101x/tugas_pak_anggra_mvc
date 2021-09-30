@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Petugas</title>
 </head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    td,
+    a {
+        color: white;
+    }
+</style>
 
 <body>
     <!-- Responsive navbar-->
@@ -49,13 +66,14 @@
 
 
     <table class="table table-bordered" border="1">
-        <tr>
+        <tr class="table-light">
             <th>No</th>
             <th>ID Petugas</th>
             <th>Username</th>
             <th>Password</th>
             <th>Nama Petugas</th>
             <th>Level</th>
+            <th>Action</th>
 
         </tr>
         <?php

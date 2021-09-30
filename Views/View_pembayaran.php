@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Pembayaran</title>
 </head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    td,
+    a {
+        color: white;
+    }
+</style>
 
 <body>
     <!-- Responsive navbar-->
@@ -49,7 +66,7 @@
 
 
     <table class="table table-bordered" border="1">
-        <tr>
+        <tr class="table-light">
             <th>No</th>
             <th>ID Pembayaran</th>
             <th>ID Petugas</th>
