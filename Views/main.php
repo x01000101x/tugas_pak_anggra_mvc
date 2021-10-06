@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    td,
+    a {
+        color: white;
+    }
+</style>
 
 <body>
     <!-- Responsive navbar-->
@@ -35,31 +52,47 @@
             $id = "";
         }
 
-        if ($id == 1) {
+        if ($id == 'id_k') {
             include('View_kelas.php');
-        } elseif ($id == 2) {
+        } elseif ($id == 'id_po_k') {
             include('View_post_kelas.php');
-        } elseif ($id == 3) {
+        } elseif ($id == 'id_pu_k') {
             include('View_put_kelas.php');
+        } elseif ($id == 'id_s') {
+            include('View_siswa.php');
+        } elseif ($id == 'id_po_s') {
+            include('View_post_siswa.php');
+        } elseif ($id == 'id_pu_s') {
+            include('View_put_siswa.php');
+        } elseif ($id == 'id_sp') {
+            include('View_spp.php');
+        } elseif ($id == 'id_po_sp') {
+            include('View_post_spp.php');
+        } elseif ($id == 'id_pu_sp') {
+            include('View_put_spp.php');
+        } elseif ($id == 'id_pet') {
+            include('View_petugas.php');
+        } elseif ($id == 'id_po_pet') {
+            include('View_post_petugas.php');
+        } elseif ($id == 'id_pu_pet') {
+            include('View_put_petugas.php');
+        } elseif ($id == 'id_pem') {
+            include('View_pembayaran.php');
+        } elseif ($id == 'id_po_pem') {
+            include('View_post_pembayaran.php');
+        } elseif ($id == 'id_pu_pem') {
+            include('View_put_pembayaran.php');
         } else {
-            echo "Selamat Datang";
+            include('Home.php');
         }
         ?>
+    </div>
 
-        <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>TUGAS MVC PAK ANGGRA</h1>
-                <p class="lead">OLEH : LEONARD DENIEL DAMANIK (16)<br>
-                    KELAS : 12 RPL 2
-                </p>
-                <p>Silahkan gunakan topbar diatas</p>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="scripts.js"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
 
 
 </body>
