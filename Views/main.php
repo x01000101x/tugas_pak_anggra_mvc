@@ -11,6 +11,7 @@
 <style>
     body {
         background-color: black;
+        background-image: url('https://c.tenor.com/LGF6QF4tG3YAAAAM/black-eye.gif');
     }
 
     p,
@@ -35,11 +36,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="View_siswa.php">Siswa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="View_petugas.php">Petugas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="View_kelas.php">Kelas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="View_spp.php">SPP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="View_pembayaran.php">Pembayaran</a></li>
+                    <li class="nav-item"><a class="nav-link" href="main.php?menu=<?php echo base64_encode('id_s') ?>">Siswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="main.php?menu=<?php echo base64_encode('id_pet') ?>">Petugas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="main.php?menu=<?php echo base64_encode('id_k') ?>">Kelas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="main.php?menu=<?php echo base64_encode('id_sp') ?>">SPP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="main.php?menu=<?php echo base64_encode('id_pem') ?>">Pembayaran</a></li>
                 </ul>
             </div>
         </div>
