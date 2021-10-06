@@ -11,6 +11,7 @@
 <style>
     body {
         background-color: black;
+        background-image: unset;
     }
 
     p,
