@@ -10,8 +10,6 @@ include '../Controllers/Controller_spp.php';
 include '../Controllers/Controller_kelas.php';
 include '../Controllers/Controller_pembayaran.php';
 
-
-
 // Membuat variabel dari Get URL
 $function = $_GET['function'];
 
