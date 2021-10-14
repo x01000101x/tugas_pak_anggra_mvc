@@ -58,53 +58,56 @@
     <?php
     foreach ($GetSiswa as $Get) {
     ?>
+        <div class="container">
+            <div class="con mt-3 ml-3 position-absolute top-0 start-0">
+                <form action="../Config/Routes.php?function=put" method="POST">
+                    <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
+                    <table border="0">
+                        <input type="hidden" name="nisn" value="<?php echo $Get['nisn']; ?>">
 
-        <form action="../Config/Routes.php?function=put" method="POST">
-            <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
-            <table border="1">
-                <input type="hidden" name="nisn" value="<?php echo $Get['nisn']; ?>">
+                        <tr>
+                            <td>NISN</td>
+                            <td><input type="number" name="nisn" value="<?php echo $Get['nisn']; ?>"></td>
+                        </tr>
+                        <tr>
+                            <td>NIS</td>
+                            <td><input type="number" name="nis" value="<?php echo $Get['nis']; ?>"></td>
+                        </tr>
+                        <tr>
+                            <td>Nama</td>
+                            <td><input type="text" name="nama" value="<?php echo $Get['nama']; ?>"></td>
+                        </tr>
+                        <tr>
+                            <td>ID kelas</td>
+                            <td><input type="number" name="id_kelas" value="<?php echo $Get['id_kelas']; ?>"></td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td><input type="text" name="alamat" value="<?php echo $Get['alamat']; ?>"></td>
+                        </tr>
+                        <tr>
+                            <td>No telepon (62)</td>
+                            <td><input type="number" name="no_telp" value="<?php echo $Get['no_telp']; ?>"></td>
+                        </tr>
+                        <tr>
+                            <td>ID spp</td>
+                            <td><input type="number" name="id_spp" value="<?php echo $Get['id_spp']; ?>"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
+                        </tr>
+                    </table </form>
+            </div>
+        </div>
 
-                <tr>
-                    <td>NISN</td>
-                    <td><input type="number" name="nisn" value="<?php echo $Get['nisn']; ?>"></td>
-                </tr>
-                <tr>
-                    <td>NIS</td>
-                    <td><input type="number" name="nis" value="<?php echo $Get['nis']; ?>"></td>
-                </tr>
-                <tr>
-                    <td>Nama</td>
-                    <td><input type="text" name="nama" value="<?php echo $Get['nama']; ?>"></td>
-                </tr>
-                <tr>
-                    <td>id_kelas</td>
-                    <td><input type="number" name="id_kelas" value="<?php echo $Get['id_kelas']; ?>"></td>
-                </tr>
-                <tr>
-                    <td>alamat</td>
-                    <td><input type="text" name="alamat" value="<?php echo $Get['alamat']; ?>"></td>
-                </tr>
-                <tr>
-                    <td>no_telp</td>
-                    <td>62<input type="number" name="no_telp" value="<?php echo $Get['no_telp']; ?>"></td>
-                </tr>
-                <tr>
-                    <td>id_spp</td>
-                    <td><input type="number" name="id_spp" value="<?php echo $Get['id_spp']; ?>"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
-                </tr>
-            </table </form>
-
-        <?php
+    <?php
     }
-        ?>
+    ?>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 
 
 </body>
