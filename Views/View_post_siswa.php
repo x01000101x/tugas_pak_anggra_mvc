@@ -82,7 +82,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
+                        <td colspan="2" align="right"><input class="bg-success" type="submit" name="proses" value="Create"></td>
                     </tr>
                 </table>
             </form>

@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Kelas</title>
 </head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    td,
+    a {
+        color: black;
+    }
+
+    .con {
+        background-color: white;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 
 <body>
 
@@ -16,32 +45,31 @@
     // Memanggil fungsi dari CSRF
     include('../Config/Csrf.php');
     ?>
-    <form action="../Config/Routes.php?function=create_kelas" method="POST">
-        <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
-        <div class="mb-3">
-            <label for="id_kelas" class="form-label">ID Kelas</label>
-            <input type="number" class="form-control" id="id_kelas" name="id_kelas" aria-describedby="emailHelp" required>
+    <div class="container">
+        <div class="con mt-3 ml-3 position-absolute top-0 start-0">
+
+            <form action="../Config/Routes.php?function=create_kelas" method="POST">
+                <input type="hidden" name="csrf_token" value="<?php echo CreateCSRF(); ?>" />
+                <table border="0">
+
+                    <td>ID kelas</td>
+                    <td><input type="number" name="id_kelas" required></td>
+
+                    <tr>
+                        <td>nama kelas</td>
+                        <td><input type="text" name="nama_kelas" required></td>
+                    </tr>
+                    <tr>
+                        <td>kompetensi keahlian</td>
+                        <td><input type="text" name="kompetensi_keahlian" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right"><input class="bg-success" type="submit" name="proses" value="Create"></td>
+                    </tr>
+                </table>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="id_kelas" class="form-label">Nama Kelas</label>
-            <input type="text" class="form-control" id="id_kelas" name="id_kelas" aria-describedby="emailHelp" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <td>id kelas</td>
-        <td><input type="number" name="id_kelas" required></td>
-        </tr>
-        <tr>
-            <td>nama kelas</td>
-            <td><input type="text" name="nama_kelas" required></td>
-        </tr>
-        <tr>
-            <td>kompetensi keahlian</td>
-            <td><input type="text" name="kompetensi_keahlian" required></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
-        </tr>
-    </form>
+    </div>
 
 </body>
 
