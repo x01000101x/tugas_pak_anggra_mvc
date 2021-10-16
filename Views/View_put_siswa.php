@@ -94,7 +94,7 @@
                             <td><input type="number" name="id_spp" value="<?php echo $Get['id_spp']; ?>"></td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="right"><input type="submit" name="proses" value="Create"></td>
+                            <td colspan="2" align="right"><input class="bg-warning" type="submit" name="proses" value="Edit"></td>
                         </tr>
                     </table </form>
             </div>
