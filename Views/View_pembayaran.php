@@ -59,6 +59,8 @@
             <th>Tahun Dibayar</th>
             <th>id spp</th>
             <th>jumlah bayar</th>
+            <th>Actions</th>
+
         </tr>
         <?php
         // Decision validation variabel
